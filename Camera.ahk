@@ -1,12 +1,10 @@
 RButton::
-   Click M D
-   Click R D
+   SendInput {MButton down}{RButton down}
    keywait, RButton
 return
 
 RButton Up::
-	Click R U
-   	Click M U
+   SendInput {MButton up}{RButton up}
 return
 
 F4::ExitApp
